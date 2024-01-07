@@ -22,24 +22,36 @@ Java: The core programming language used for developing the backend logic.
 Spring MVC: A framework for building Java-based enterprise applications, utilized for handling HTTP requests and managing the application's architecture.
 
 MySQL: A relational database management system used for storing user and seat allocation information.
-### Maven: A build automation tool used for managing project dependencies and building the project.
-### Git: Version control system for tracking changes in the source code.
-### GitHub: The platform used for hosting and version control of the project repository.
+
+Maven: A build automation tool used for managing project dependencies and building the project.
+
+Git: Version control system for tracking changes in the source code.
+
+GitHub: The platform used for hosting and version control of the project repository.
 
 ## Getting Started
 ### Prerequisites
 Java 8: Make sure you have Java 8 installed on your machine.
+
 MySQL Database: Set up a MySQL database and note down the connection details (e.g., URL, username, password).
+
 Maven: Install Maven to manage project dependencies.
+
 Git: Ensure Git is installed on your machine for version control.
 
 # Features
 Purchase a train ticket from London to France.
+
 Generate a receipt with details such as From, To, User information, and the price paid.
+
 Allocate users a seat in either section A or B of the train.
+
 View details of the receipt for a user.
+
 View a list of users and their allocated seats based on the requested section.
+
 Remove a user from the train.
+
 Modify a user's seat.
 
 # API Endpoints
