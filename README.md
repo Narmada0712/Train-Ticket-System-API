@@ -72,11 +72,11 @@ Copy code
   
   "user": {
   
-    "firstName": "John",
+    "userfirstName": "John",
     
-    "lastName": "Doe",
+    "userlastName": "Doe",
     
-     "email": "john.doe@example.com"
+     "useremail": "john.doe@example.com"
   
   }
   
@@ -98,68 +98,129 @@ Copy code
   
   "pricePaid": 20.0,
   
-  "seatSection": "A",
-  
-  "seatNumber": 1
+  "seatSection": "A"
 
 }
+
 ### View Receipt
+
 Endpoint: /receipt/{userId}
+
 Method: GET
+
 Response:
+
 json
+
 Copy code
+
 {
+
   "from": "London",
+  
   "to": "France",
+  
   "user": "John Doe",
+  
   "pricePaid": 20.0,
+  
   "seatSection": "A",
+  
   "seatNumber": 1
 }
+
 ### View Users and Seats
+
 Endpoint: /users/{section}
+
 Method: GET
+
 Response:
+
 json
+
 Copy code
+
 [
+
   {
+  
     "user": "John Doe",
+    
     "seatSection": "A",
-    "seatNumber": 1
+  
   },
+  
   {
+  
     "user": "Jane Doe",
+    
     "seatSection": "B",
-    "seatNumber": 2
+    
   }
-  // ...
+  
 ]
+
 ### Remove User
+
 Endpoint: /remove/{userId}
+
 Method: DELETE
-Response:
-json
-Copy code
-{
-  "message": "User John Doe removed successfully."
-}
-### Modify User's Seat
-Endpoint: /modify/{userId}
-Method: PUT
+
 Request Body:
+
 json
+
 Copy code
+
 {
-  "seatSection": "B",
-  "seatNumber": 3
+
+  "userId":"3"
+
 }
+
+
 Response:
+
 json
+
 Copy code
+
 {
-  "message": "User John Doe seat modified successfully."
+
+  "message": "User John Doe removed successfully."
+
 }
+
+### Modify User's Seat
+
+Endpoint: /modify/{userId}
+
+Method: PUT
+
+Request Body:
+
+json
+
+Copy code
+
+{
+
+  "userId":"2"
+
+}
+
+Response:
+
+json
+
+Copy code
+
+{
+
+  "message": "User John Doe seat modified successfully."
+
+}
+
 
 
