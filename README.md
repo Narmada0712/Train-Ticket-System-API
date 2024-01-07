@@ -17,12 +17,12 @@
 This project is a simple Java-based API for booking train tickets from London to France. It uses Spring MVC for handling HTTP requests and MySQL for storing user and seat allocation information.
 
 ## Technology Used
-Java: The core programming language used for developing the backend logic.
-Spring MVC: A framework for building Java-based enterprise applications, utilized for handling HTTP requests and managing the application's architecture.
-MySQL: A relational database management system used for storing user and seat allocation information.
-Maven: A build automation tool used for managing project dependencies and building the project.
-Git: Version control system for tracking changes in the source code.
-GitHub: The platform used for hosting and version control of the project repository.
+### Java: The core programming language used for developing the backend logic.
+### Spring MVC: A framework for building Java-based enterprise applications, utilized for handling HTTP requests and managing the application's architecture.
+### MySQL: A relational database management system used for storing user and seat allocation information.
+### Maven: A build automation tool used for managing project dependencies and building the project.
+### Git: Version control system for tracking changes in the source code.
+### GitHub: The platform used for hosting and version control of the project repository.
 
 ## Getting Started
 ### Prerequisites
