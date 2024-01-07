@@ -25,10 +25,6 @@ MySQL: A relational database management system used for storing user and seat al
 
 Maven: A build automation tool used for managing project dependencies and building the project.
 
-Git: Version control system for tracking changes in the source code.
-
-GitHub: The platform used for hosting and version control of the project repository.
-
 ## Getting Started
 ### Prerequisites
 Java 8: Make sure you have Java 8 installed on your machine.
@@ -57,30 +53,55 @@ Modify a user's seat.
 # API Endpoints
 All the API will be accessible at http://localhost:8080 by default.
 ### Purchase a Ticket
+
 Endpoint: /purchase
+
 Method: POST
+
 Request Body:
+
 json
+
 Copy code
+
 {
+
   "from": "London",
+  
   "to": "France",
+  
   "user": {
+  
     "firstName": "John",
+    
     "lastName": "Doe",
-    "email": "john.doe@example.com"
+    
+     "email": "john.doe@example.com"
+  
   }
+  
 }
+
 Response:
+
 json
+
 Copy code
+
 {
+
   "from": "London",
+  
   "to": "France",
+  
   "user": "John Doe",
+  
   "pricePaid": 20.0,
+  
   "seatSection": "A",
+  
   "seatNumber": 1
+
 }
 ### View Receipt
 Endpoint: /receipt/{userId}
